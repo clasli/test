@@ -9,12 +9,21 @@ body
 {
     overflow: hidden;
 } */
+main {
+    position:absolute;
+    z-index: 1;
+    background: transparent;
+    padding: 1em;
+    font-family: sans-serif;
+}
 
 .webgl
 {
     /* position: fixed; */
     /* top: 0;
     left: 0; */
+    position:absolute;
+    z-index: -9999;
     outline: none;
 }
 #settings {

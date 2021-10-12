@@ -12,15 +12,15 @@ import testFragmentShader from './shaders/test/fragment.glsl'
 
 
 // // Debug
-const gui = new dat.GUI()
+// const gui = new dat.GUI()
 
 // Canvas
 const canvas = document.querySelector('canvas.webgl')
 
 // Scene
 const scene = new THREE.Scene()
-scene.background = new THREE.Color('grey')
-scene.add(new THREE.AxesHelper())
+scene.background = new THREE.Color('white')
+// scene.add(new THREE.AxesHelper())
 
 // Particles
 const particlesGeometry = new THREE.BufferGeometry()
@@ -75,9 +75,10 @@ const sizes = {
  */
 // Base camera
 const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height, 0.1, 100)
-camera.position.x = -5
+camera.position.x = 10
 camera.position.y = 3.0
-camera.lookAt(0,0,0)
+camera.position.z = 10
+camera.lookAt(0, 0, 0);
 scene.add(camera)
 
 // Controls
