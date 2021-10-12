@@ -12,6 +12,7 @@ body
 main {
     position:absolute;
     z-index: 1;
+    color: black;
     background: transparent;
     padding: 1em;
     font-family: sans-serif;
